@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 const fs = require('fs');
 var BPromise = require("bluebird");
-var waypointsController = require('../api/modules/waypoints/controller');
-var Waypoint = require('../api/modules/waypoints/schema');
-var Constellation = require('../api/modules/constellations/schema');
-var constellationsController = require('../api/modules/constellations/controller');
+const api = require('unacademic-api');
+var waypointsController = api.waypoints.controller;
+var Waypoint = api.waypoints.schema;
+var Constellation = api.constellations.schema;
+var constellationsController = api.constellations.controller;
 const host = process.env.HOST || '0.0.0.0';
 
 var mongoLocalURL = "mongodb://" + host + "/unacademic";
