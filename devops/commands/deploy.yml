@@ -38,18 +38,12 @@
    - name: structure | server | npm install dependencies serverside
      npm: path={{ deploy.to }}/releases/{{ timestamp.stdout }}
 
-   - name: structure | client | npm install dependencies clientside
-     npm: path={{ deploy.to }}/releases/{{ timestamp.stdout }}/client
-
-   - name: structure | client | run grunt build to create production assets
-     shell: node_modules/grunt-cli/bin/grunt build chdir={{ deploy.to }}/releases/{{ timestamp.stdout }}/client
-
    - name: structure | release | set current
      file: src={{ deploy.to }}/releases/{{ timestamp.stdout }} dest={{ deploy.to }}/current state=link
 
    - name: structure | server | delete previously running application instances
      shell: pm2 delete nodejs
-     ignore_errors: yes
+    n ignore_errors: yes
 
    - name: structure | server | (re)start the application
      shell: pm2 start {{ deploy.to }}/current/index.js --name=nodejs -f --node-args='--harmony'

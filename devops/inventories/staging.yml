@@ -1,8 +1,8 @@
 [webservers]
-x.x.x.x name=unacademic-staging-01-ams
+188.166.97.196 name=unacademic-staging-01-ams
 
 [dbservers]
-x.x.x.x name=unacademic-staging-01-ams
+188.166.97.196 name=unacademic-staging-01-ams
 
 [staging:children]
 webservers
