@@ -1,0 +1,5 @@
+---
+deploy:
+  to: /home/deploy/unacademic
+  repository: https://github.com/coding-the-humanities/unacademic-API.git
+  keep_releases: 10

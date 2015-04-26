@@ -1,0 +1,12 @@
+[webservers]
+x.x.x.x name=unacademic-staging-01-ams
+
+[dbservers]
+x.x.x.x name=unacademic-staging-01-ams
+
+[staging:children]
+webservers
+dbservers
+
+[staging:vars]
+server_environment_name=staging

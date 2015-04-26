@@ -1,0 +1,8 @@
+---
+common:
+  apt_packages:
+    - build-essential
+    - python-software-properties
+    - git
+    - vim
+    - htop

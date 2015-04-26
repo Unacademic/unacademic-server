@@ -1,0 +1,12 @@
+---
+- name: environment | create web root
+  shell: mkdir -p {{ web.root }}
+  tags: environment
+
+- name: environment | chown web root
+  shell: chown -R deploy:deploy {{ web.root }}
+  tags: environment
+
+- name: environment | set variables
+  template: src=environment.tpl dest=/etc/environment
+  tags: environment

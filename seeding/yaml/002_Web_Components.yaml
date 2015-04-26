@@ -1,0 +1,66 @@
+title:      Web Components
+level:      2
+points:     100
+mandatory:  true
+category:   markup
+
+technologies:
+  - Polymer
+
+description:
+  full: >
+    Web components are the future of web development, but what are they? 
+
+    We can for example create an element called <my-clock> that would insert a clock 
+    displaying the time. Like any other element we could then reuse our 
+    clock element whenever and wherever we need.  
+
+    Web components enable truly encapsulated and reusable components for
+    the web. This means we can easily create widgets and other useful
+    elements that can be easily shared, without having to retype or 
+    rework code. That is the beauty of web components.
+  summary: > 
+    Web components are reusable code elements  
+tasks:
+  - title: Learn about Polymer
+    description: >
+      Polymer is a library built on top of web components, making the 
+      development of web components easier. Polymer has a certain way 
+      of thinking how these web components are best used and created. 
+      First familiarise yourself with Polymer and its methodology. 
+    instructions:
+      - Read up on Polymer on the Polymer Project website
+      - Watch the introduction video by Matthew McNulty (link below)
+    resources:
+      - title:   Polymer 
+        type:    website
+        site:
+          name:  Polymer Project
+        url:   https://www.polymer-project.org/
+      - title:   Introduction Video
+        type:    video
+        site:
+          name:  Introduction to Polymer - The Next Generation of Web Development 
+        url:   https://www.youtube.com/watch?v=8-Zq2KUN6jM
+
+  - title: Build your first Polymer element
+    description: >
+      Use the information that you have gathered on the Polymer website and 
+      through watching the video to build your very own Polymer element and make 
+      the magic happen!
+    instructions:
+      - Use the Plunker link below and fork the posted code
+      - Make your own Polymer element as shown in the example
+      - Hit run to see what it looks like
+    resources:
+      - title:   Web components
+        type:    Article
+        site:
+          name:  techcrunch
+          description: Google Believes Web Components Are The Future Of Web Development
+        url:   http://techcrunch.com/2013/05/19/google-believes-web-components-are-the-future-of-web-development/
+      - title: Build one element
+        type: tool
+        site:
+          name: Plunker
+        url: http://plnkr.co/edit/mN4hsk1fgO9UR01cjwmd

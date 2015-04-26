@@ -1,0 +1,135 @@
+title:      Scripts
+level:      3
+points:     100
+mandatory:  false
+category:   script
+
+technologies:
+  - HTML
+  - CSS
+  - Javascript
+
+description:
+  full: >
+    A script is a small bit of code that enables web browsers to do something 
+    more than just displaying static results. Scripts are used in web design to 
+    create dynamic pages. So far you have included noscript inside your polymer 
+    element. The reason is because untill now we did not use the script 
+    functionalities. There are some big differences between regular HTML scripts 
+    and Polymer scripts. Scripts are extremely powerful and are responsible for
+    the behaviour of your web-app.
+  summary: >
+    A script is a small bit of code that allows for dynamic pages.
+
+tasks:
+  - title: Create a script
+    description: >
+      Where HTML specifies the strucutre, and CSS the styling, scripts allow
+      for behaviour. To add behaviour you create a script tag and inside most
+      commonly JavaScript is used. JavaScript works by finding a target HTML
+      element, and then doing something to it, just like CSS, but the syntax is 
+      different.
+    instructions:
+      - Open the plunker file in the resources and press run
+      - Add the script tag
+      - Inside the script tag target the blockquote by using its ID
+      - Change the background color of the element using a script
+      - The font of the author is too small make it bigger using a script
+    resources:
+      - title:    Create a script
+        type:     tool
+        site:
+          name:   Plunker
+        url:      http://plnkr.co/edit/lmjA9BMq1sRUOri6XgjT
+      - title:    Script tag
+        type:     article
+        site:
+          name:   w3c script tag
+        url:      http://www.w3schools.com/tags/tag_script.asp
+      - title:    Script tag placement and element targeting
+        type:     video
+        site:
+          name:   Where should the script tag be placed in html
+        url:      https://www.youtube.com/watch?v=uUQ4HRAJzsg
+      - title:    Change the styling using a script
+        type:     article
+        site:
+          name:   JavaScript HTML DOM - Changing CSS
+        url:      http://www.w3schools.com/js/js_htmldom_css.asp
+      - title:    List of style object properties
+        type:     article
+        site:
+          name:   HTML DOM Style Object
+        url:      http://www.w3schools.com/jsref/dom_obj_style.asp
+
+  - title: Set up a Script in Polymer
+    description: >
+      Now you know how to use scripts in regular HTML 
+      but how do you do that in Polymer?
+      When you do not include a script, you need to explicitly 
+      tell Polymer that by adding the noscript attribute.
+      When you do, you leave that attribute out.
+      In Polymer the syntax to include a script is different from that in 
+      regular HTML.
+      Till now all the Polymer elements included this noscript.
+      This time we add the basic syntax to include a script inside a Polymer 
+      component.
+    instructions:
+      - Open the plunker file
+      - Look at the basic script set up syntax
+      - Remove the no script to start using the script
+      - You do not have to add a script try to understand the syntax needed
+        to allow the script to work
+      - The values that are set contain content try to find where that content 
+        is transferred to
+    resources:
+      - title:   Set up a script in Polymer
+        type:    tool
+        site:
+          name:  Plunker
+        url:     http://plnkr.co/edit/wwHpnPLz2UnNujnGzkTl?p=preview
+
+  - title: Create Scripts with Polymer
+    description: >
+      In this case we will use the script to set our values, and we will use
+      the double bracket method (like handlebars) to insert those values 
+      elsewhere. 
+      In Polymer we do not have to target specific elements.
+      The element containing the script already indicates where we want our script to run. 
+      This is an example where we do not just alter the styling anymore 
+      but use a script to store information.
+      This is useful in combination with the repeat attribute of Polymer's template tag. 
+    instructions:
+      - Open the plunker file
+      - Inside the script there are two objects styles and quotes
+      - Inside the blockquote you will find the word category
+      - Replace the word category with a word that appropriatly describes
+        it like "humor" or "sad"
+      - Replace it by adding a field in the quotes object and using the double
+        brackets to display it where it says category
+    resources:
+      - title:    Create a script in Polymer
+        type:     tool
+        site:
+          name:   Plunker
+        url:      http://plnkr.co/edit/U5sNTvbT4oX00xkVPuDq?p=preview
+      - title:    Create elements with scripts
+        type:     article
+        site:
+          name:   Polymer Project
+        url:      https://www.polymer-project.org/docs/start/creatingelements.html
+      - title:    Polymer developer guide
+        type:     article
+        site:
+          name:   Polymer Project
+        url:      https://www.polymer-project.org/docs/polymer/polymer.html
+      - title:    Basics of Polymer
+        type:     book
+        site:
+          name:   Polymer Book
+        url:      http://coding-the-humanities.gitbooks.io/polymer-book/content/index.html
+      - title:    Advanced messaging and scripts in Polymer
+        type:     article
+        site:
+          name:   Polymer Project 
+        url:      https://www.polymer-project.org/articles/communication.html

@@ -1,0 +1,12 @@
+[webservers]
+33.33.33.33 name=unacademic-web-01
+
+[dbservers]
+33.33.33.33 name=unacademic-web-01
+
+[vagrant:children]
+webservers
+dbservers
+
+[vagrant:vars]
+server_environment_name=development

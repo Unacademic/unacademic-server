@@ -1,0 +1,101 @@
+title:      Composition
+level:      5
+points:     100
+mandatory:  false
+category:   theory
+
+technologies:
+  - Javascript
+
+description:
+  full: >
+    Composition is a method programmers use to design their code.
+    Code can be a hotchpotch of meaningless words and numbers.
+    When we think of maintainability, scalability and collaboration.
+    You might want to structure your code in a more efficient way.
+
+    Composition is one of these methods to provide us with a
+    solution to optimize functionality reuse. It builds on the ideas of
+    Object-Oriented-programming or simply OOP.
+    In this lesson you will familiarise yourself with these fundamentals
+    of structuring and designing code.
+  summary: >
+    Composition is a method to structure your code for optimal code reuse.
+
+tasks:
+  - title: Learn about Object-Oriented Programing
+    description: >
+      Object-oriented programming, or OOP, is a model for writing
+      computer programs. Before OOP, code was most commonly a list of instructions
+      that acted on memory in the computer. Instead of a procedural list of
+      actions, OOP is modeled around objects that interact with each other.
+      Like a blueprint these objects connect with each other to carry out
+      the intent of the program. Some languages, like
+      Javascript, are based on this model, so to better understand
+      Javascript we must understand OOP.
+    instructions:
+      - Watch and read the resources
+    resources:
+      - title:    Micronugget classes and OOP
+        type:     video
+        site:
+          name:   MicroNugget, What is OOP? (Object-Oriented Programming)
+        url:      https://www.youtube.com/watch?v=5VkrdKzKGlA
+      - title:    Object-Oriented Programming Concepts
+        type:     article
+        site:
+          name:   The Java™ Tutorials
+        url:      http://docs.oracle.com/javase/tutorial/java/concepts/
+      - title:    Wiki OOP
+        type:     article
+        site:
+          name:   Wikipedia
+        url:      http://en.wikipedia.org/wiki/Object-oriented_programming
+
+  - title: Discover the benefits of Composition over Inheritance
+    description: >
+      Object-Oriented Programming has two well known candidates for the
+      reuse of functionality, inheritance and composition.
+      Inheritance is like a tree structure: each object inherits its parent's
+      properties. Inheritance is quicker to set up but might produce problems
+      down the line, when introducing changes.
+
+      Composition is a method where the big objects ar composed of smaller
+      objects, each serving a different smaller function. This method reduces
+      complexity by treating many objects as one object.
+    instructions:
+      - Watch and read the resources
+    resources:
+      - title:    Thoughtbot Composition over Inheritance
+        type:     video
+        site:
+          name:
+        url:      https://www.youtube.com/watch?v=-ZBtQzTKC8s
+      - title:    Composition vs. Inheritance (watch from 4:34 - 6:50)
+        type:     video
+        site:
+          name:   Composition vs. Inheritance
+        url:      https://www.youtube.com/watch?v=dYUZiJEy0JE
+
+  - title: Understand Composition in Polymer
+    description: >
+      Composition as a model may seem complicated or a bit abstract, but
+      the truth is, you have already been doing it with Polymer.
+      Polymer allows you to have many small components that eventually make
+      up your entire app. Most reasons for why we use Polymer, actually refer
+      back to composition. For example the encapsulation allows every component
+      to function independently making debugging easier.
+      Composition allows for efficient code reuse and is therefore
+      the preferred method by many.
+    instructions:
+      - Open the Polymer Designer
+      - Inside the designer create a core card component
+      - Composition is about adding smaller components in a big component
+      - Add some other components like the header or input component
+      - Practice some more with composition and compose yourself some Frankenstein components
+    resources:
+      - title:    Polymer Designer
+        type:     tool
+        site:
+          name:   polymer-project-designer
+        url:      https://www.polymer-project.org/tools/designer/

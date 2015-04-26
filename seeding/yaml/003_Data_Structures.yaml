@@ -1,0 +1,139 @@
+title:      Data Structures
+level:      3
+points:     100
+mandatory:  false
+category:   theory
+
+technologies:
+  - Javascript
+
+description:
+  full: >
+    Data comes in many forms, and data structures equally so.
+    But as terrifying as arrays and objects might seem at first glance,
+    they are easy to grasp in reality. 
+    
+    Data structures are used in all programming languages (and one 
+    could even say in natural languages). The ways they are and 
+    can be structured vary from language to language,
+    but usually values are put in lists and lists within lists.
+  summary: >
+    Data comes in many forms, and data structures equally so.
+
+tasks:
+  - title: Get a grip on Numbers
+    description: >
+      Numbers are at the core of programming,
+      not just webprogramming, but all programming.
+      In fact, that computers run on binary code,
+      i.e. zeroes and ones, can be considered common knowledge.
+      But since writing programs in binary is a hell of a job,
+      computer scientists have developed a number of ways
+      to represent numbers.
+    instructions:
+      - Read the articles you can find below ("How numbers are encoded" is optional)
+      - Watch the video
+    resources:
+      - title:    Javascript Numbers
+        type:     reference
+        site:     
+          name:   W3C Schools
+        url:      http://www.w3schools.com/js/js_numbers.asp
+      - title:    Numbers
+        type:     article
+        site:
+          name:   Mozilla Developer Network
+        url:      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+      - title:    How numbers are encoded in Javascript
+        type:     article
+        site:     
+          name:   2 Ality
+        url:      http://www.2ality.com/2012/04/number-encoding.html
+      - title:    Javascript Numbers
+        type:     video
+        site:
+          name:   Youtube - Chris Walker
+        url:      http://youtu.be/VTCvtXWLXLc
+
+  - title: Get a grip on Strings
+    description: >
+      Strings are essentially a number of characters glued together.
+      Strings can form words, sentences, URL's; basically anything.
+      One important aspect of strings is that they are arrays,
+      and like arrays they index at zero.
+      Quotes ("") denote strings.
+      The objective is to manipulate strings into doing what you want,
+      by writing a little program.
+    instructions:
+      - Read the article
+      - Copy and paste the article (or any other text) into one long string
+        in your text editor
+      - Change all characters to lower case
+      - Make another string, this time of your name
+      - Using a number of for loops and if statements,
+        capitalise letters in the long text so that it shows your name over and
+        over again
+      - If you get confused, take a look at the Arrays task first
+    resources:
+      - title:    Strings
+        type:     article
+        site:   
+          name:   Quirks Mode 
+        url:      http://www.quirksmode.org/js/strings.html
+
+  - title: Get a grip on Arrays
+    description: >
+      Arrays are lists of data.
+      Some only contain numbers, some contain characters.
+      While strings are arrays, arrays may contain multiple strings.
+      Arrays may even contain multiple arrays!
+      The [] brackets are used to indicate arrays.
+    instructions:
+      - Read the article
+      - Make an array containing the titles of five of your favorite books,
+        movies, series or albums/songs
+      - Add a title once using the push method, once using the unshift method,
+        and once using a different method
+      - Remove a title three times using different methods each time
+    resources:
+      - title:    Arrays
+        type:     article
+        site:     
+          name:   Mozilla Developer Network
+        url:      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+  - title: Objects
+    description: >
+      Objects are slightly more intricate than arrays,
+      but only slightly so. 
+      Whereas arrays are simply lists, objects are lists
+      with keys.
+      These keys are words under which values are files.
+      A quick example would look like this: 
+      var captain = {name: "Katherine Janeway"};
+      One fun aspect of Javascript is that virtually everything
+      is an object.
+    instructions:
+      - Read the articles
+      - Make an object containing the titles of five of your favorite books,
+        movies, series or albums/songs using the creators as keys and the titles
+        as values
+      - Expand the object by making objects within the object for every key,
+        adding subkeys and values for creator, title, year, and the reason
+        why you think this particular artwork is so awesome
+    resources:
+      - title:    Data Structures':' Objects and Arrays
+        type:     article
+        site:
+          name:   Eloquent Javascript
+        url:      http://eloquentjavascript.net/04_data.html
+      - title:    Data Structures
+        type:     article
+        site:
+          name:   Eloquent Javascript
+        url:      http://eloquentjavascript.net/1st_edition/chapter4.html
+      - title:    How is almost everything in Javascript an object?
+        type:     thread
+        site:
+          name:   Stack Overflow
+        url:      http://stackoverflow.com/questions/9108925/how-is-almost-everything-in-javascript-an-object

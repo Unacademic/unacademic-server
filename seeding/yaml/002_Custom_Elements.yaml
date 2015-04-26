@@ -1,0 +1,100 @@
+title:      Custom Elements
+level:      2
+points:     100
+mandatory:  true
+category:   workflow
+
+technologies:
+  - Webcomponents
+  - Polymer
+
+description:
+  full: >
+    In web development some key principles proved to be very important. 
+    When working on a project, things can get complicated fast. 
+    That is why we must consider the maintainability of the project.
+    A project should be able to grow easily, for example by adding new features. 
+
+    In order for numerous team members to collaborate, a team should be able to 
+    easily share their work. Web components are a good way to enforce 
+    collaboration, because you can add features by simply importing a component. 
+    This method also results in clean and readable code. With scalability and 
+    maintainability in mind, components can be combined, stacked or replaced. 
+
+    Most importantly because components are completely encapsulated, 
+    it provides an easy way to share and reuse code. Working with web components
+    is not only about creating your own custom elements but also about 
+    incorporating other people's custom elements. Why create something that has 
+    already been created? Instead of just collaborating with your team why not 
+    share your components with the world? 
+    
+    In a very short time, this idea has already generated an active community
+    that shares their components. There are many custom elements available; one
+    could build an entire web application just from external components.
+
+  summary: >
+    Web components provide an easy way to share and reuse code. 
+
+tasks:
+  - title: Discover the power of web components
+    description: >
+      Polymer already provides many standardized custom elements that are useful
+      for building your own web app. These components are designed to act as 
+      building blocks: you can mix and match and add your own.
+
+      Custom elements are a great way to get started with building a web
+      application. To help you visualize the way these components work
+      together, Polymer has created a web tool called Designer. In Designer you
+      can choose from all the web components Polymer has to offer and drag and
+      drop them on the canvas.
+    instructions:
+      - Open the Polymer Designer and start combining some components
+      - Also review the code by pressing the < > incorporating
+      - Try to understand what changes in the code when you add a component
+    resources:
+      - title:   Polymer Designer
+        type:    tool
+        site:
+          name:  Polymer Designer
+        url:     https://www.polymer-project.org/tools/designer/
+      - title:   Polymer Designer tutorial
+        type:    video
+        site:
+          name:  Introducing the Polymer Designer tool
+        url:     https://www.youtube.com/watch?v=djQh8XKRzRg
+
+
+  - title: Incorporate an external component
+    description: >
+      Polymer is not the only community that produces components for everybody to 
+      use. There are many individuals and companies who share their components 
+      with the world. Customelements.io is a community where you can upload and 
+      find custom elements. 
+
+      For example, in the list you will find a custom element that creates a
+      Github profile card. You could import the element with a single line.
+      then you can duplicate it as many times as you like and modify it by
+      adding or changing the attributes. 
+    instructions:
+      - Open the plunker file
+      - The file is missing an important line of code. You have to import 
+        github.html
+      - Link the github.html file inside the <head> to make the components work
+      - Add another card and change the attribute to display your github profile
+    resources:
+      - title:   Add your personal github-card
+        type:    website
+        site:
+          name:  Plunker
+        url:     http://plnkr.co/edit/owzD5eWdsEhxdSEJwMkh
+      - title:   HTML import of webcomponents 
+        type:    article
+        site:
+          name:  HTML Imports
+        url:     http://www.html5rocks.com/en/tutorials/webcomponents/imports/#started
+      - title:   library of custom elements
+        type:    website
+        site:
+          name:  custom elements community
+        url:     http://customelements.io/
+

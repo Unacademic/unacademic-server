@@ -1,0 +1,8 @@
+---
+- name: ufw | allow ssh
+  shell: ufw allow 22
+  tags: ufw
+
+- name: ufw | enable
+  shell: ufw --force enable
+  tags: ufw

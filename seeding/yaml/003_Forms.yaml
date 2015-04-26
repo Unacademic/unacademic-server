@@ -1,0 +1,79 @@
+title:      Forms
+level:      3
+points:     100
+mandatory:  false
+category:   markup
+
+technologies:
+  - HTML Forms
+
+description:
+  full: > 
+    We regularly come across fields on web pages used to collect 
+    user input, like names, e-mail addresses, checkbox answers or messages. 
+    This bundle of features on a website is a form. Forms are the most common 
+    interface used on websites or web applications.
+    A form consists of different form elements called controls or widgets.
+    Controls are usually defined by input elements which in their turn have
+    numerous different types. So, a form can have for instance three input
+    elements; one with type "text" for name, another one with type "email"
+    for e-mail address and a third one with type "submit"; the well known submit 
+    button.
+  summary: > 
+    Forms are used to collect user input, like names, e-mail addresses, selected 
+    answers or messages.
+
+tasks:
+  - title: Sketch an HTML Form
+    description: > 
+       HTML Forms help us collect data. But what is the best way and the most 
+       effective structure to ask and gather specific information? 
+       What can be included in order to make it easier for the user to submit
+       these data?
+    instructions:
+      - Read up on the basics of Forms
+      - Think about what you want to include in a form
+      - Draw a sketch of a form on paper
+    resources:
+      - title:    My First HTML Form
+        type:     website
+        site:
+          name:   Mozilla Developer Network
+        url:      https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form
+
+  - title: Explore Form Elements
+    description: >
+        The most common way to define a form element is the input
+        element. Input elements can have a multitude of types, defined by the 
+        type attribute. However, they are not the only types of form elements.
+    instructions:
+       - Discover the different types of input elements
+       - Learn the difference between the various form elements 
+    resources:
+      - title:    The <input> element
+        type:     website
+        site:
+          name:   Mozilla Developer Network
+        url:   	  https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form#The_%3Cinput%3E_element
+      - title:    The native form widgets
+        type:     website
+        site: 
+          name:   Mozilla Developer Network
+        url:      https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/The_native_form_widgets
+
+  - title: Build an HTML Form
+    description: > 
+        Transfer the HTML form sketch to code. Using the resources above decide 
+        on which elements you should use for your form and how is best to order 
+        them in the form.
+    instructions:
+      - Fork the code on the Plunker link below
+      - Add form elements of your choice to build the form
+      - Use and change the existing CSS to style your form
+      - Hit Run on Plunker to see what it looks like
+    resources:
+      - title:    Build an HTML Form  
+        type:     tool
+        site:
+          name:   Plunker
+        url:      http://plnkr.co/edit/DEwA6pGQOQQttmnMWRNg

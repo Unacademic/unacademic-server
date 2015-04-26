@@ -1,0 +1,88 @@
+title:      Async
+level:      5
+points:     100
+mandatory:  false
+category:   theory
+
+technologies:
+  - Javascript
+  - Polymer
+
+description:
+  full: >
+    Asynchronicity sounds like a difficult term, but it simply is an indication
+    of action and time. Asynchronous events do not necessarily occur at
+    the same time. They might have to wait or listen for other events to happen.
+
+    To understand what asynchronicity exactly is, it is probably better
+    to look at examples from everyday life. As a matter of fact, real life
+    is full of asynchronous events.
+  summary: >
+     A good way to explain asynchronicity is to take examples from everyday
+     life.
+tasks:
+  - title: Comprehend Asynchronicity in Real Life
+    description: >
+        Imagine you are meeting up with two friends for dinner. You take the
+        tram to arrive from point A to the restaurant but have to make a stop
+        halfway to run some errands first. Your friend is taking the tram half
+        an hour later from the same starting point but arrives at the restaurant
+        before you do; she did not have to stop halfway. She then notifies the
+        third of the company, who waiting nearby, arrives immediately. When you
+        arrive theyare already having a second round and waiting to order food.
+        You have to notify the waiter.
+    instructions:
+       - Read also the example in the article below
+    resources:
+      - title:   Asynchronicity
+        type:    Website
+        site:
+          name:  webapplog.com
+        url:     http://webapplog.com/asynchronicity-in-node-js/
+
+  - title: Comprehend Asynchronicity in Javascript
+    description: >
+        Taking the examples from real life, how is asynchronicity
+        introduced in programming languages?
+    instructions:
+       - Continue reading up on asynchronicity in JavaScript
+    resources:
+      - title:   Event-Based Programming, What Async Has Over Sync
+        type:    Website
+        site:
+          name:  code.tutsplus
+        url:     http://code.tutsplus.com/tutorials/event-based-programming-what-async-has-over-sync--net-30027
+    resources:
+      - title:   Browser Event Loop – How to Use Asynchronicity to Unfreeze the Browser
+        type:    Website
+        site:
+          name:  triangular
+        url:     http://triangular.io/blog/browser-event-loop-how-to-use-asynchronicity-to-unfreeze-the-browser/
+      - title:   Five Patterns to Help You Tame Asynchronous JavaScript
+        type:    Website
+        site:
+          name:  Tech.pro
+        url:     http://tech.pro/blog/1402/five-patterns-to-help-you-tame-asynchronous-javascript
+
+  - title: Dealing with Asynchronicity in Polymer
+    description: >
+      Polymer, being based on Javascript has its way to deal with
+      asynchronicity.
+    instructions:
+      - Read the articles
+    resources:
+      - title: Dealing with asynchronous tasks
+        type:  Website
+        site:
+          name: Polymer
+        url:    https://www.polymer-project.org/docs/polymer/polymer.html#asyncmethod
+      - title:  Delaying work
+        type:  Website
+        site:
+          name: Polymer
+        url:    https://www.polymer-project.org/docs/polymer/polymer.html#job
+      - title:  Use of Polymer async method
+        type:   Website
+        site:
+          name: Tutorial savvy
+        url:    http://www.tutorialsavvy.com/2014/07/use-of-polymer-async-method.html

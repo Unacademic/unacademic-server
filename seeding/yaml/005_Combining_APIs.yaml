@@ -1,0 +1,88 @@
+title:        Combining APIs   
+level:        5
+points:       100
+mandatory:    false
+category:     code
+
+technologies:
+  - JavaScript
+  - HTML
+  - AJAX
+  - APIs
+  - Polymer
+
+description:
+  full: >
+    APIs are very versatile, but usually also specified on one
+    particular data set. In order to achieve interesting, surprising
+    and useful results, programmers often combine multiple sources
+    of data. One frequently used interface is the Google Maps API. 
+    People love to map all sorts of things, whether it is important
+    data such as global carbon emissions or less important things such 
+    as where the nearest Burger King is. Nevertheless, APIs can help
+    a programmer with a lot of compelling problems.
+    You will combine the Geolocations, Google Maps and Rijksmuseum APIs
+    to create a new dataset.
+  summary: >
+    APIs are very versatile. Combining them can solve very interesting problems.
+
+tasks:
+  - title: Mashing up
+    description: >
+      Mashing up is the principle of taking the data of two or more APIs
+      or datasets and combining these to create something new.
+      Usually this is achieved by taking data and juxtapositioning it with
+      other data in such a way that a surprising and interesting effect is
+      achieved.
+      For example, Wheel of Lunch takes a location and what you want to eat
+      and randomly selects a place in your vicinity where you can get that food.
+      It does so by consulting the Yahoo Local Search API.
+      Sadly, it told us to get our sushi at the Albert Heijn, so it's not 
+      entirely flawless.
+      This is just one of the many things that can be achieved with mashing up.
+    instructions:
+      - Read the articles
+      - Look at the examples
+      - Get inspired
+    resources:
+      - title:    Mashup (web application hybrid)
+        type:     article
+        site:     
+          name:   wikipedia
+        url:      http://en.wikipedia.org/wiki/Mashup_(web_application_hybrid)
+      - title:    Top Mashups
+        type:     article
+        site:    
+          name:   Mashable
+        url:      http://mashable.com/2009/10/08/top-mashups/    
+      - title:    Hungry?
+        type:     application
+        site:
+          name:   Wheel of Lunch
+        url:      http://wheelof.com/lunch/    
+
+  - title: Combine Geolocations and the Rijksmuseum API
+    description: >
+      Combining the geographical data from Geolocations and the
+      data from the Rijksmuseum is the next step to understanding
+      API's. Displaying the data in an actual map, however, is
+      going to be quite challenging. 
+    instructions:
+      - Check out the Plunker
+      - The <get-coordinates> tag is now still in index.html, 
+        but it needs to get into rijkmuseum-query.html
+      - Once you can use <get-coordinates> into rijksmuseum-query.html,
+        get the coordinates of the places of production of the artworks
+        of a painter of your choice, using a template repeat
+      - Make the browser display the name of the artwork, the artist, 
+        the location(s) and their longitude and latitude
+      - Not all artworks have locations and some have multiple, 
+        so decide yourself how to tackle this problem
+      - You get bonus points if you display the locations on a map,
+        but it is not manditory
+    resources:
+      - title:    Plunker task
+        type:     Plunker
+        site:
+          name:   Plunker
+        url:      http://plnkr.co/edit/gPndwP

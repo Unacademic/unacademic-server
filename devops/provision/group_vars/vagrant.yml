@@ -1,0 +1,15 @@
+---
+web:
+  root: /home/deploy/unacademic
+  public: /home/deploy/unacademic/client/build
+  port: 8080
+  api:
+    location: /api
+
+  env:
+    APPLICATION_HOST: unacademic.dev
+    APPLICATION_PORT: 8080
+    APPLICATION_SECRET: thisisasecret
+    DATABASE_HOST: localhost
+    DATABASE_NAME: unacademic
+    DATABASE_PORT: 27017

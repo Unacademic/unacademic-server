@@ -1,0 +1,18 @@
+---
+- name: nginx | install
+  apt: package=nginx state=latest
+  tags: nginx
+
+- name: nginx | start
+  service: name=nginx state=started
+  tags: nginx
+
+- name: nginx | add firewall exceptions
+  shell: |-
+      ufw allow 80
+  tags: nginx
+
+- name: nginx | setup reverse proxy
+  template: src=nginx-vhost.tpl dest=/etc/nginx/sites-available/default
+  notify: nginx | reload
+  tags: nginx

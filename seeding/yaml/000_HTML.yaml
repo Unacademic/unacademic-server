@@ -1,0 +1,133 @@
+title:      HTML
+level:      0
+points:     100
+mandatory:  false
+category:   markup
+
+technologies:
+  - HTML
+
+description: 
+  full: >
+    HTML stands for Hypertext Markup Language. When you look at a web page on a 
+    web browser you see, at the simplest level, words. HTML instructs a web 
+    browser what content to display. In many cases a page also displays images 
+    or maybe video clips. 
+    HTML defines and separates "content" (words, images, audio, video, and so 
+    on) from "presentation" (how to display a specific type of content). HTML 
+    uses a pre-defined set of elements to identify content types.
+  summary: >
+    HTML gives directions to the web browser on what content to display. 
+    It uses a set of elements to identify content types.
+
+tasks:
+  - title: Introduction
+    description: >
+      This assignment is meant to introduce you to HTML (surprise!). 
+      HTML forms the basis of every webpage today.
+      Therefore it is crucial that you learn it.
+      In this assignment, we want you to explain HTML in your own words.
+    instructions:
+      - Read the article.
+      - Watch the instruction video.
+      - Download a text editor. We recommend Sublime Text 2.
+      - Write in the text editor in your own words what HTML is and what it consists of.
+    resources:
+      - title:   Introduction
+        type:    article
+        site:
+          name:  Mozilla Developer Network
+        url:     https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction
+      - title:   Introduction video
+        type:    video
+        site:
+          name:  Youtube - Aaron Maynard's Channel
+        url:     http://youtu.be/FluG2Nu8Tjg
+      - title:   Sublime Text
+        type:    program
+        site:
+          name:  Sublime Text
+        url:     http://www.sublimetext.com/2   
+
+  - title: Basic Structure
+    description: >
+      HTML works with things called 'tags'. 
+      These grant a certain functionality to the content within.
+      Tags are used to achieve clarity and structure within your webpage.
+      Make a basic HTML structure to fit your text in for this assignment.
+    instructions:
+      - Read the article.
+      - Make a basic html structure containing a head and body.
+      - Take the text you wrote in the last assignment (or any other text) and 
+        place it in the body.
+      - Tag the headings with the h1, 2, 3 or 4 tags, and the paragraphs with 
+        the p tag.
+      - Save the file, go to the folder it is in and double click on the file to 
+        open it in your browser.
+      - Congratulations, you just made a webpage!
+    resources:
+      - title:   HTML5 Page Structure
+        type:    article
+        author:  Chris Coyer
+        site:
+          name:  CSS Tricks
+          url:   http://css-tricks.com
+        url:   http://css-tricks.com/snippets/html/html5-page-structure/
+
+  - title: The Anchor Tag
+    description: >
+      Linking is a way to reference to other stuff on the internet. 
+      You use the 'A' (for 'Anchor') tag for this.
+      Linking creates a so-called hyperlink to another website.
+      You usually link to contextualize the content of your website.
+      Link to a number of URL's with the Anchor tag for this assignment.
+    instructions:
+      - Read the article
+      - Make some links under the paragraphs in your text that reference to 
+        related subjects.
+    resources:
+      - title:   A Tag
+        type:    article
+        site:
+          name:  Mozilla Developer Network
+        url:     https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+        
+  - title: The Image Tag
+    description: >
+      Everybody loves pictures. 
+      People include pictures (usually concerning cats) on their webpage to 
+      illustrate the content. You can include pictures with the <img> tag. The 
+      pictures can be retrieved from the internet, in which you use the 
+      hyperlink of the image. They can also be stored locally, in which case you 
+      put them in the same folder as your webpage and reference to their name. 
+      Include pictures on your webpage with the image tag.
+    instructions:
+      - Read the articles.
+      - Look up on Google Images at least five pictures related to your text.
+      - Include these pictures on your website, to better illustrate the content.
+    resources:
+      - title:   IMG Tag
+        type:    article
+        site:
+          name:  Mozilla Developer Network
+        url:     https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
+      - title:   Basic HTML - adding images
+        type:    article
+        site:
+          name:  HTML Goodies
+        url:     http://www.htmlgoodies.com/primers/html/article.php/3478181
+
+resources:
+  - title:   Front-End Foundations
+    type:    tutorial
+    site:
+      name:  CodeSchool
+      url:   http://www.codeschool.com
+    url:   https://www.codeschool.com/courses/front-end-foundations
+  - title:   HTML & CSS
+    type:    book
+    publisher:
+      name:     John Wiley & Sons Inc.
+      location: Indianapolis, IN
+      url:      http://www.wiley.com
+    url: http://www.bol.com/nl/p/html-css/1001004010712714/?featuredProduct

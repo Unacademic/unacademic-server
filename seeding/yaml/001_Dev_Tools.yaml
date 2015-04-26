@@ -1,0 +1,59 @@
+title:      Dev Tools
+level:      1
+points:     100
+mandatory:  true
+category:   workflow
+
+technologies:
+  - Chrome Dev Tools
+
+description:
+  full: >
+    Very important tools to know are the developer tools in browsers. They are used for
+    many things like bug testing and experimenting. You can also use it to see
+    the perfomance of the site. You can view your HTML, CSS and script
+    combined, and you can actively interact with it. Google has very nice
+    implementations, which is one of the reasons why we use chrome as a
+    standard browser.
+  summary: >
+    Very important tools to know are the development tools in browsers. They are used for
+    many things like bug testing and experimenting.
+
+tasks:
+  - title: Open Chrome Dev Tools
+    description: >
+      Get a feel for what the developer tools can do. Navigate all of its tools a bit and try out some of its features.
+    instructions:
+      - Open the tools (right-click inspect or Mac:alt+apple+i Windows:ctrl+shift+j)
+      - Inspect your document
+    resources:
+      - title:   Chrome on Dev Tools
+        type:    website
+        site:
+          name:  Chrome on Dev Tools
+        url:     https://developer.chrome.com/devtools
+      - title:   Codeschool on Dev Tools
+        type:    video
+        site:
+          name:  Codeschool
+        url:     http://discover-devtools.codeschool.com/
+
+  - title: Change CSS in Dev Tools
+    description: >
+      Dev Tools are a great way to test out some CSS and see it rendered right
+      away. Often styling will not show because you have made a
+      little syntax error. The console allows you to quickly change some of the styling and get direct feedback.
+    instructions:
+      - Change or add a few CSS values
+      - Experiment a bit with the box-model, add a border or position an element differently
+
+  - title: Use the Javascript console
+    description: >
+      The console is a useful tool to test out little bits of code in
+      conjuntion with your site. You can test very simple commands or do complex
+      debugging. Your website can output to the console. If you add
+      a console.log("hello") and then press enter, it will show up in the console.
+    instructions:
+      - Do some basic calculations in the console (for instance 1+1)
+      - Try console.log("something")
+      - Create a simple variable (type - var name = "Your Name") and call it by typing name

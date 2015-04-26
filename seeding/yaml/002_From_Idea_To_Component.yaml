@@ -1,0 +1,67 @@
+title:      From Idea To Component
+level:      2
+points:     100
+mandatory:  true
+category:   general
+
+technologies:
+  - Webcomponents 
+
+description:
+  full: >
+    Now that you have come up with tons of ideas on how to implement the Rijksmuseum 
+    API, it's time to put one of those ideas into a real web component.
+    It could be anything: switches, knobs, an image viewer etc. Your project 
+    group's only limitation is its own imagination (and perhaps technical capabilities). 
+    In the tasks below, you may jump back and forth between tasks, as insights in one 
+    task may require jumping back to update a previous task. This is part of iterative 
+    design.
+  summary: >
+    Now that you came up with tons of ideas on how to implement the Rijksmuseum 
+    API, put one of those ideas into a real web component.
+
+tasks:
+  - title: Going to the drawingboard
+    description: >
+      Try to get all your ideas on paper. Design your 
+      application on paper or make a wireframe by using a digital tool such 
+      as Moqups. Try to break down your concept in multiple components. 
+      Think clearly about their structure, and how the user interacts with each 
+      component.
+    instructions:
+      - Use pen and paper or a digital tool to make a wireframe of your concept
+    resources:
+      - title:   Make a mockup
+        type:    tool
+        site:
+          name:  Moqups
+        url:     https://moqups.com/
+      - title:   Sketchsheet (pen and paper)
+        type:    tool
+        site:
+          name:  Sneakpeekit
+        url:     http://sneakpeekit.com/browser-sketchsheets/#tab-32-3
+
+  - title: Choose a Web Component
+    description: >
+      Once your group has finished drawing a wireframe, you have to choose a 
+      web component. Which one would be the best to choose? Try to further specify 
+      this web component. How does the user interact with it? Which features are 
+      essential, and which ones are less important? 
+    instructions:
+      - Have a group discussion
+
+  - title: Make a Web Component
+    description: >
+      It's time to build your web component. Check out the accompanying Plunker; you 
+      have already built your own Polymer elements. You can use these to realize 
+      the idea chosen. Save it once you are done and share the URL in our 
+      Slack-channel.
+    instructions:
+      - Make a web component
+    resources:
+      - title:   Web component assignment
+        type:    tool
+        site:
+          name:  Plunker
+        url:     http://plnkr.co/edit/tDnRCXvoA6ZHag2SoNBf

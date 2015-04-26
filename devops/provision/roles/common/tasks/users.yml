@@ -1,0 +1,16 @@
+---
+- name: users | deploy | add
+  user: name=deploy groups=www-data shell=/bin/bash state=present
+  tags: users
+
+# - name: users | deploy | authorize deploy key
+#   authorized_key: user=deploy key="{{ lookup('file', 'keys/unacademic-deploy.pub') }}"
+#   tags: users
+
+# - name: users | deploy | provision id_rsa
+#   template: src=keys/unacademic-deployuserkey dest=/home/deploy/.ssh/id_rsa mode=0600 owner=deploy
+#   tags: users
+
+# - name: users | deploy | provision id_rsa.pub
+#   template: src=keys/unacademic-deployuserkey.pub dest=/home/deploy/.ssh/id_rsa.pub mode=0600 owner=deploy
+#   tags: users

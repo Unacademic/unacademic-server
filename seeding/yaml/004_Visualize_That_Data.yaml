@@ -1,0 +1,45 @@
+title:      Visualize That Data
+level:      4
+points:     100
+mandatory:  true
+category:   design
+
+technologies:
+  - Polymer
+  - Javascript
+
+description:
+  full: >
+    For this assignment you need to combine your knowledge to create a
+    radar graph using an external component. You will combine this component
+    with the Rijksmuseum API by selecting and using specific data which you will
+    then have to represent on the graph.
+  summary: >
+    For this assignment you need to combine your knowledge to create a radar
+    graph using an external component and the Rijksmuseum API.
+tasks:
+  - title: Add data to the graph
+    description: >
+      This graph will be based on the life and work of Karel Appel
+      and must have two parameters; location and quantity of works. So,
+      the graph will actually answer the question in which location did Karel Appel
+      produce most of his works. The Plunker file below contains everything you
+      need to complete the assignment.
+    instructions:
+      - Fork the Plunker code below
+      - Pick another chart from the chart.js Polymer page
+      - Look for an artist in the Rijksmuseum API
+      - Count all the productionPlaces
+      - Put all this data in your new chart
+      - Save it and post it in our Slack-channel
+    resources:
+      - title:    Plunker
+        type:     Tool
+        site:
+          name:   Visualize that data
+        url:      http://plnkr.co/edit/tCsasJ
+
+      - title:    Chart.js Polymer page
+        type:   Article
+        site:   Github
+        url:    https://github.com/robdodson/chart-elements

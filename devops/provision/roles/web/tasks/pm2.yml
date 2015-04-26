@@ -1,0 +1,8 @@
+---
+- name: pm2 | install
+  shell: npm install pm2 -g --unsafe-perm
+  tags: pm2
+
+- name: pm2 | generate startup script
+  shell: pm2 startup ubuntu
+  tags: pm2

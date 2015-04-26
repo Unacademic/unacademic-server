@@ -1,0 +1,77 @@
+title:      JSON
+level:      1
+points:     100
+mandatory:  false
+category:   data
+
+technologies:
+  - JSON
+
+description:
+  full: >
+    JSON is a data format that is widely used because it is easily parsed by computers. Many API's supply you with data in this format. It stands for
+    JavaScript Object Notation, but it is not exclusively Javascript. Many other programming
+    languages support it as well.
+  summary: >
+    JSON is an easily parsed and widely used data format.
+
+tasks:
+  - title: Discover JSON
+    description: >
+      JSON is built on two important notions. The first notion is objects.
+      These are entities with key/value pairs. The second notion is arrays,
+      also called unordered lists (unordered in the sense that the order of
+      the items in the list is not necessarily meaningful).
+    instructions:
+      - Find out what Key/Value pairs are and what their relation is to unordered
+        lists
+      - Get a feel for the syntax by creating a meta-data set for your photos.
+        It should be an array of objects(the photos) with the name of the
+        photographer, url, location and the summary.
+    resources:
+      - title:   JSON
+        type:    site
+        site:
+          name:  JSON
+        url:     http://www.json.org/
+
+  - title: Check your code
+    description: >
+      Syntax errors will be made more often than you
+      would expect. A good way to fix these errors is to use a so-called linter
+      to check your code.
+    instructions:
+      - Try to check JSON data in the plunker below for errors using JSONlint(find link below).
+    resources:
+      - title:  Linting Task
+        type:   gist
+        site:
+          name: Github Gists
+        url:    https://gist.githubusercontent.com/Zaturrby/6fd0e8f8326da8367874/raw/c87a031a631bad7b01d0b524e287f3d6aa56e6b9/nytwitherror.json
+      - title:  JSON Linter
+        type:   site
+        site:
+          name: JSONlint
+        url:    http://jsonlint.com/
+      - title:  JSON Linter for Sublime
+        type:   tool
+        site:
+          name: JSONlint for Sublime
+        url:    https://sublime.wbond.net/packages/JSONLint
+
+  - title: Structure your data
+    description: >
+      You now have syntactically correct data. But if the data isn't repetitive in some way,
+      or keys are written differently
+      from item to item, it will still be of no use. What are the important
+      things you have to keep track of?
+    instructions:
+      - Fix the inconsistencies in this file
+      - Look back at your own file, is it well structured?
+      - Make sure that every photo's properties are grouped!
+    resources:
+      - title:  Structure Task
+        type:   site
+        site:
+          name:   Github Gists
+        url:    https://gist.githubusercontent.com/Zaturrby/e0c9cb60517405f69c25/raw/ea489af1ddae7542f7398f38e838636a57baee0a/unstructured.json

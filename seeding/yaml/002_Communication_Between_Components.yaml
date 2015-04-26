@@ -1,0 +1,59 @@
+title:      Communication Between Components
+level:      2
+points:     100
+mandatory:  true
+category:   markup
+
+technologies:
+  - Polymer
+
+description:
+  full: >
+
+    By default, web Components are encapsulated. This means they function
+    completely on their own. But what if you actually want them to communicate
+    with each other? Because of their encapsulation we need to explicitly tell
+    the components what data they want to receive or send. 
+
+    When connected components are very powerful. They can instantly relay 
+    information and can change each others content. 
+
+  summary: > 
+    Get components to communicate and change each others content. 
+tasks:
+  - title: Make the content in an element change
+    description: >
+      In the previous level you did a task on templating. On Plunker, the page 
+      automatically reloads everytime you make a change; on a real web application 
+      though, this is not a desirable behaviour; only the DOM element that changes
+      should be reloaded. By using two-way data binding, only the relevant DOM 
+      element changes when the data is changed and vice versa.
+
+  - title: Relay information between Polymer elements
+    description: >
+      You have already built a Polymer element. You now have to make your 
+      elements communicate with one another in order to get your code 
+      to actually work. You will learn how to call and connect your elements, 
+      and how to exchange information between elements using so-called attributes.
+    instructions: 
+      - Go to the Plunker link below, fork the code and create your own element
+      - Link them to the index page as shown with the hello-page example
+      - Define and use your own custom attributes in your elements
+      - Hit Run to see what it looks like
+      - Use the resources below to elaborate on your code
+    resources: 
+      - title: Make and Combine your own Elements
+        type:  tool
+        site:
+          name: Plunker
+        url: http://plnkr.co/edit/CoZwTwm8MkOJTNffeyg3
+      - title: Combining Multiple Elements
+        type: book
+        site:
+          name: Polymer-book
+        url: http://coding-the-humanities.gitbooks.io/polymer-book/content/chapter_2_combining_multiple_elements/README.html
+      - title: Communication and Message Passing
+        type: website
+        site:
+          name: Polymer Project
+        url: https://www.polymer-project.org/articles/communication.html

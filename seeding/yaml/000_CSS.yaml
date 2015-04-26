@@ -1,0 +1,128 @@
+title:      CSS
+level:      0
+points:     100
+mandatory:  false
+category:   design
+
+technologies:
+  - CSS
+
+description: 
+  full: >
+    This is the introduction to CSS (cascading style sheets). A CSS file allows 
+    you to separate your website's markup content from its style. As always you 
+    use your HTML file to arrange the content, but all of the presentation 
+    (fonts, colors, background, borders, text formatting, link effects & so on…) 
+    are accomplished within a CSS file.
+  summary: >
+    CSS allows you to separate your website's styling from its HTML content. 
+
+tasks:
+  - title: Introduction
+    description: >
+      Learn about styling web pages with cascading style sheets.
+    instructions:
+      - Read the article.
+      - Watch the instruction video.
+    resources:
+      - title:   CSS Introduction
+        type:    article
+        site:
+          name:  CSS Basics
+        url:     http://www.cssbasics.com/introduction-to-css/
+    resources:
+      - title:   CSS Tutorial
+        type:    video
+        author:  Naveed 
+        site:
+          name:  CSS Tutorial
+        url:     http://youtu.be/Waq1d1jpl3M
+
+  - title: Selectors
+    description: >
+      In order for CSS to work you first need to specify which element you wish 
+      to apply CSS to. You do this with 'selectors'. Selectors are essentially 
+      just names for the things you want to target and affect. Within the 
+      {brackets} of selectors you place the effects you want to apply. In this 
+      assignment we want you to create selectors.
+    instructions:
+      - Read the article.
+      - Watch the video.
+      - Add selectors to the html provided in the resources for the body,
+        the paragraphs and each separate title.
+    resources:
+      - title:   CSS selectors
+        type:    article
+        site:
+          name:  Mozilla Developer Network
+        url:     https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors
+      - title:   CSS Container
+        type:    video
+        author:  PHPacademy
+        site:
+          name:  Simple CSS Flat Design Container
+        url:     http://youtu.be/irZ1ZMImZfg
+
+  - title: Colors
+    description: >
+      Colors give life to a page. Black and white may be minimalistic and sleek, 
+      but the possibilities that arise when you add, say, 50 shades of grey, add 
+      so much to a website. This article focuses mainly on background color, but 
+      the principles can also be applied to text color. Color a text and 
+      background for this assignment.
+    instructions:
+      - Read the articles
+      - Write a short text about how to use selectors in CSS.
+      - Color your webpage and the text you just wrote.
+    resources:
+      - title:   Background Color
+        type:    article
+        site:
+          name:  Mozilla Developer Network
+        url:     https://developer.mozilla.org/en-US/docs/Web/CSS/background-color
+      - title:   Hexidecimal Color Code
+        type:    article
+        site:
+          name:  W3C Schools
+        url:     http://www.w3schools.com/html/html_colorvalues.asp
+      - title:   Hex Color Picker
+        type:    application
+        site:
+          name:  Hex Color Picker
+        url:     http://www.colorpicker.com/
+
+  - title: CSS Fonts
+    description: >
+      CSS also allows programmers to change the font on your webpage, or even 
+      include all the fonts. You can include custom fonts, but for some of them 
+      you have to pay. Nevertheless, you will probably grow font of the 
+      possibilities you already possess. Add cool fonts to your webpage.
+    instructions:
+      - Read the article.
+      - Change the font of your short text.
+    resources:
+      - title:   CSS Fonts
+        type:    article
+        site: 
+          name:  W3C Schools
+        url:     http://www.w3schools.com/css/css_font.asp
+      - title:   More CSS Fonts
+        type:    article
+        site:
+          name:  Mozilla Developer Network
+        url:     https://developer.mozilla.org/en-US/docs/Web/CSS/font
+
+resources:
+  - title:       Front-End Foundations
+    type:        tutorial
+    site:
+      name:      CodeSchool
+      url:       http://www.codeschool.com
+    url:         https://www.codeschool.com/courses/front-end-foundations
+  - title:       HTML & CSS
+    type:        book
+    publisher:
+      name:      John Wiley & Sons Inc.
+      location:  Indianapolis, IN
+      url:       http://www.wiley.com
+    url:         http://www.bol.com/nl/p/html-css/1001004010712714/?featuredProduct

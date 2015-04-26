@@ -1,0 +1,149 @@
+title:      Enumeration     
+level:      4     
+points:     100   
+mandatory:  false
+category:   script  
+
+technologies:
+  - HTML
+  - Javascript
+
+description:
+  full: > 
+    Enumeration as you might have already guessed has something to do with numbers. 
+    An enumeration is a list of objects that has been ordered in a certain way so each 
+    of the objects inside the list has its unique place. The way arrays are ordered 
+    influences the way we can manipulate them. In Javascript there are available 
+    techniques to alter these orders or use them to our advantage. 
+  summary: > 
+    An enumeration is a list of objects that has been ordered in a certain way so each
+    the objects inside the list has its unique place.
+
+tasks:
+  - title: Count like a computer
+    description: > 
+      You may have come across this concept before but in computer science 
+      counting starts at 0. This is important to remember when working with arrays. It 
+      means the second object in the array is assigned to the digit 1. In HTML markup there
+      are a couple of ways to display lists; the unordered list which means that the order is 
+      not indexed with numbers, and the ordered list where every item has a number assigned.
+    instructions: 
+    - The numbers are scrambled 
+    - Assign the correct index numbers
+    resources:
+      - title:   JavaScript Array indexOf() Method
+        type:    article
+        site:    
+          name:  Arrays
+        url:     http://www.w3schools.com/jsref/jsref_indexof_array.asp
+      - title:   Unordered and ordered lists
+        type:    article
+        site:    
+          name:  HTML Lists
+        url:     http://webdesignfromscratch.com/html-css/html-lists/
+
+  - title: ForEach
+    description: > 
+      An array is a collection of objects, each of these objects is assigned
+      a number. This indexation of arrays allows for targeting specific objects. In this way you
+      can think of an array as an ordered list, and each object has its number assigned to it.
+      ForEach is a technique that uses this index to iterate over the array and allows us to
+      alter each object seperately with only one command. We simply state what we want to happen
+      to an object inside the array, but use the properties unique to that object. So for each object
+      inside the array we do something. The computer knows which object has which unique properties
+      because they have their unique numbers assigned to them like an ordered list. This does mean 
+      that the way you order your objects may be important.  
+    instructions:
+      - Read and watch the resources
+      - Open the plunker file 
+      - For each object in the array the value and the index number is displayed
+      - change the array by adding a number or maybe some text
+      - As you can see the index counts differently and starts from 0
+    resources:
+      - title:   Expand the array
+        type:    website
+        site:
+          name:  Plunker
+        url:     http://plnkr.co/edit/NWG1Ru0hXhiklpW3SbP4?p=preview
+      - title:   Array enumeration
+        type:    video
+        site:    
+          name:  Kraig Brock Schmidt
+        url:     http://www.kraigbrockschmidt.com/2013/01/22/array-enumeration-javascript/
+      - title:   ForEach tutorial
+        type:    video
+        site:    
+          name:  
+        url:     https://www.youtube.com/watch?v=skrRDG-pQJU 
+      - title:   ForEach explanation
+        type:    video
+        site:    
+          name:  Youtube
+        url:     https://www.youtube.com/watch?v=zdh4MK12Ha4 
+      - title:   ForEach MDN
+        type:    article
+        site:    
+          name:  Mozilla Developer Network
+        url:     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for_each...in
+
+  - title: Learn how to use the filter
+    description: > 
+      Because every object inside an array has its unique number, we can
+      do some math with them. We can manipulate the way the array is ordered or 
+      constructed. Or we can filter out only the things we need.
+    instructions:
+      - Open the plunker file 
+      - Explore the possibilities of filter and sort 
+    resources:
+      - title:   Explore filter and sort
+        type:    website
+        site:
+          name:  Plunker
+        url:     http://plnkr.co/edit/MLZC1cKArDm17vZtwLud?p=preview
+      - title:   Filter
+        type:    article
+        site:
+          name:  Mozilla Developer Network - Filter
+        url:     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+      - title:   Sort
+        type:    article
+        site:
+          name:  Mozilla Developer Network - Sort
+        url:     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+
+  - title: Combine template repeat and the Rijksmuseum API 
+    description: > 
+      In Polymer these concepts translate in much the same way but with 
+      a few changes. It actually makes things easier, combining the syntax that we have 
+      already seen with forEach in Javascript and the each method with handlebars. 
+      Using the Rijksmuseum API custom element we can filter the array to show us only 
+      the years artworks by Rembrandt were made. The end result should be
+      a simple list of the years he produced his work in ascending order.
+      In the Plunker provided we already made a script that pulls out only the years 
+      of his artworks. You must display the years using template repeat and sort the list.
+    instructions:
+      - Open the plunker
+      - Look at rijksmuseum.html 
+      - Inside the script tag there is a little script that pulls out only the year each artwork was produced
+      - But the year of each artwork is not yet displayed, we need a template repeat for that
+      - Display the year of each artwork with a template repeat between the comment lines 
+        (remember to look at the variables)
+      - Now you will see just a list with some years
+      - Use the sort method to make the years in ascending order
+    resources:
+      - title:   Template Repeat and Sort
+        type:    website
+        site:
+          name:  Plunker
+        url:     http://plnkr.co/edit/k9s4be?p=preview
+      - title:   Template repeat
+        type:    article
+        site:
+          name:  Data binding template repeat
+        url:     https://www.polymer-project.org/docs/polymer/template.html
+      - title:   Sort
+        type:    article
+        site:
+          name:  JavaScript Array sort() Method
+        url:     http://www.w3schools.com/jsref/jsref_sort.asp
+

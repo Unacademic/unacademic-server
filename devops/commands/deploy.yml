@@ -1,0 +1,61 @@
+---
+- hosts: webservers
+  gather_facts: no
+  remote_user: root
+  sudo: yes
+  sudo_user: deploy
+  vars_prompt:
+    - name: 'version'
+      prompt: Which version (tag name, branch name, commit hash) do you want to deploy?
+      default: 'master'
+      private: no
+
+  tasks:
+   - name: structure | create basic directories
+     shell: mkdir -p {{ deploy.to }}/releases {{ deploy.to }}/shared/logs
+
+   - name: structure | variable - timestamp
+     shell: /bin/date +%s
+     register: timestamp
+
+   - name: git | checkout repository
+     git: repo={{ deploy.repository }} dest={{ deploy.to }}/repo accept_hostkey=yes version='{{ version }}'
+
+   - name: structure | release | create release
+     shell: cp -R {{ deploy.to }}/repo {{ deploy.to }}/releases/{{ timestamp.stdout }}
+
+   - name: structure | variable - current date and time
+     shell: /bin/date --iso-8601=seconds
+     register: date
+
+   - name: structure | variable - latest version
+     shell: git describe --always chdir={{ deploy.to }}/releases/{{ timestamp.stdout }}
+     register: describe
+
+   - name: structure | generate version file
+     shell: echo "{\"version\":\"{{ describe.stdout }}\", \"deploydate\":\"{{ date.stdout }}\"}" > {{ deploy.to }}/releases/{{ timestamp.stdout }}/VERSION
+
+   - name: structure | server | npm install dependencies serverside
+     npm: path={{ deploy.to }}/releases/{{ timestamp.stdout }}
+
+   - name: structure | client | npm install dependencies clientside
+     npm: path={{ deploy.to }}/releases/{{ timestamp.stdout }}/client
+
+   - name: structure | client | run grunt build to create production assets
+     shell: node_modules/grunt-cli/bin/grunt build chdir={{ deploy.to }}/releases/{{ timestamp.stdout }}/client
+
+   - name: structure | release | set current
+     file: src={{ deploy.to }}/releases/{{ timestamp.stdout }} dest={{ deploy.to }}/current state=link
+
+   - name: structure | server | delete previously running application instances
+     shell: pm2 delete nodejs
+     ignore_errors: yes
+
+   - name: structure | server | (re)start the application
+     shell: pm2 start {{ deploy.to }}/current/index.js --name=nodejs -f --node-args='--harmony'
+
+   - name: structure | server | save the application state for reboots
+     shell: pm2 save
+
+   - name: structure | release | clean up old releases
+     shell: find {{ deploy.to }}/releases -mindepth 1 -maxdepth 1 -type d | sort -r | awk 'NR > {{ deploy.keep_releases }}' | xargs rm -rf

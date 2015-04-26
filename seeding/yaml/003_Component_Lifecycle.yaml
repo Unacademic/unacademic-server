@@ -1,0 +1,70 @@
+title:      Component Lifecycle
+level:      3
+points:     100
+mandatory:  true
+category:   assignment
+
+technologies:
+  - Webcomponents 
+  - Polymer
+
+description:
+  full: >
+    Just like organisms have a certain lifecycle, webcomponents have a 
+    lifecycle of their own. For example a component can be generated
+    in your browser (DOM). Its attributes can be changed, or it can be 
+    detached from the DOM. By using JavaScript we can tap into this
+    lifecycle and add a certain amount of interactivity (lifecycle callback).
+    For instance, you could make a loading screen by using this principle. One 
+    of the first things we load into the DOM is a big component which covers 
+    the whole screen (the loading page). Once the DOM is fully initiliazed we
+    simply remove/detach this element from the DOM.
+  summary: >
+    Just like organisms have a certain lifecycle, webcomponents have a 
+    lifecycle of their own.
+
+tasks:
+  - title: Get to know the lifecycles
+    description: >
+      The official W3C webcomponent specification defines four different lifecycles. 
+      Polymer has the same lifecycles, but gives them different names and further
+      specifies some of the lifecycles.  
+    instructions:
+      - Have a look at Polymer's lifecycle
+      - You could also take a look at the official W3C specifications, but beware, it does get into some technical details
+    resources:
+      - title:   Polymer Lifecycle
+        type:    article
+        site:
+          name:  Polymer
+        url:     https://www.polymer-project.org/docs/polymer/polymer.html#lifecyclemethods
+      - title:   Custom Element Lifecycle
+        type:    article
+        site:
+          name:  Custom Elements W3C Editor's Draft 14 November 2014
+        url:     http://w3c.github.io/webcomponents/spec/custom/#custom-element-lifecycle
+
+  - title: Design a slideshow
+    description: >
+      Your city walk through Amsterdam did not go unnoticed. Your friends and your 
+      entire neighborhood asked you to share your experiences of your exotic 
+      trip through Amsterdam. They want you to give a quick presentation about it. 
+      Unfortunately your Microsoft Powerpoint trial just expired.Luckily your 
+      newly acquired coding skills will save the day. By using component 
+      lifecycles we can make a really simple image carousel or a slideshow. 
+      Check out the accompanying Plunker. Almost everything has been set, you 
+      only need to change two simple things. First you need to change the 
+      photographs in the links array to your own photographs. Secondly you 
+      need to figure out which two lifecycles we need to make the script 
+      running. Remember to check out the Polymer reference guide in the previous 
+      task.
+    instructions:
+      - Go to the Plunker-task (link below)
+      - Change the images in the links array to your own photographs
+      - Change the text "PUTLIFECYCLEHERE" to the accompanying lifecycle
+    resources:
+      - title:   Design a slideshow
+        type:    plunker
+        site:
+          name:  Plunker
+        url:     http://plnkr.co/edit/C5dsXZ8imWF4JG50SH1r

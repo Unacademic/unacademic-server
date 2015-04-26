@@ -1,0 +1,87 @@
+title:      Web Architecture
+level:      2
+points:     100
+mandatory:  false
+category:   workflow
+
+technologies:
+  - Ajax
+  - http
+
+description:
+  full: >
+    When a web page is rendered in your browser, data is being transmitted over
+    the internet. The information that is needed to render a page is stored on
+    a server. In order to retrieve that data the browser needs to request it
+    from the server. These request are using a protocol called http which is the
+    foundation of any web application.
+
+    Whenever you want to show a change on the page, we need to send an http
+    request to refresh the entire page, even if we just want to change one
+    little piece of it. If we would have a widget that needs to update
+    regularly this is obviously not the most efficient way of doing this,
+    because it constantly has to wait for everything.
+
+    This is where Ajax comes in. Ajax is a method to communicate with a server
+    in the background, without interfering with the current state of the page.
+    This technique is what makes modern web apps possible.
+  summary: >
+    This objective helps you understand how communicating between the browser and
+    the server works.
+
+tasks:
+  - title: Learn the Basics
+    description: >
+      Ajax is a group of interrelated web development techniques used on the
+      client-side to communicate with the server that runs in the background.
+      Ajax works on the client side meaning: your browser.
+
+      The video and infographic explain the differences between the traditional
+      (rerendering entire page) and the Ajax method.
+
+    instructions:
+      - Look at the infographic the link you can find below
+      - Read the resources below to get an understanding of what Ajax entails.
+    resources:
+      - title:   Ajax wikipedia
+        type:    article
+        site:
+          name:  Ajax Definition
+        url:     http://en.wikipedia.org/wiki/Ajax_(programming)
+      - title:   Server and Client side explaination
+        type:    video
+        site:
+          name:  How the Internet Works in 5 Minutes
+        url:     https://www.youtube.com/watch?v=7_LPdttKXPc
+      - title:   Ajax model infographic
+        type:    image
+        site:
+          name:  traditional model versus Ajax model
+        url:     http://www.techbubbles.com/wp-content/uploads/2009/01/ajax.png
+
+  - title: Combine Ajax and Polymer
+    description: >
+      Polymer provides a handy, simplified interface to handle Ajax requests; it's
+      called 'Core-Ajax'. This component allows programmers to easily query
+      API's and manipulate that data.
+
+      But that's not all. Since is just another polymer element, Core-Ajax also
+      makes it very easy to share data between different components.
+
+      Take a look at the Plunker link below. It's not done yet, but it's up to you
+      to finish it.
+    instructions:
+      - Look at the code of rijksmuseum-query.html and index.html
+      - Make the page display artworks of your favorite painter and their titles using the repeat attribute of Polymer
+      - (Hint':' 'look in the Javascript console in your browser)
+    resources:
+      - title:   Core Ajax
+        type:    article
+        site:
+          name:  Polymer core-ajax
+        url:     https://www.polymer-project.org/docs/elements/core-elements.html#core-ajax
+      - title:   Rijksmuseum Plunker
+        type:    code
+        site:
+          name:  Final Assignment Level 2
+        url:     http://plnkr.co/edit/nwDL4l

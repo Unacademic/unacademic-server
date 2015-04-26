@@ -1,0 +1,93 @@
+title:      Events
+level:      4
+points:     100
+mandatory:  false
+category:   script
+
+technologies:
+  - Javascript
+  - HTML
+
+description:
+  full: >
+    All interactions that users have on a web page are essentially events. Events are
+    triggered by the user when for example clicking with the mouse on an
+    image or pressing a key or even when the webpage finished loading.
+    An event is simply a notification that an action has taken place. Simply noting
+    a change is not enough though, in order to actually do something with this information
+    we have to hook an action to it and listen to the specific events.
+    We can add this hook by using event handlers, they allow us to listen
+    to a particular event and execute a function when it is triggered. Events are
+    about broadcasting and receiving, when a notification is received it needs to be processed.
+  summary: >
+    All interactions users have on a web page are essentially events.
+
+tasks:
+  - title: Understand events
+    description: >
+        Events allow as a matter of fact for interactivity on web pages. They
+        actually make web content dynamic and enable Javascript to execute
+        certain functions.
+    instructions:
+      - Read up on the article below
+    resources:
+      - title:   Introduction to Events
+        type:    website
+        site:
+          name:  QuirqsMode.org
+        url:     http://www.quirksmode.org/js/introevents.html
+
+  - title: Unravel event handling
+    description: >
+        An action triggers an event; an event calls an event handler;
+        an event handler executes a function.
+        Event handlers are simple scripts that call certain functions.
+        For example, the onload event handler can trigger a pop-up window
+        when the page you have visited just finished loading.
+    instructions:
+      - Read the articles
+      - Learn about the different types of events
+    resources:
+      - title:   Javascript events
+        type:    website
+        site:
+          name:  W3C schools
+        url:     http://www.w3schools.com/js/js_events.asp
+      - title:   Example = Catching a mouse click
+        type:    website
+        site:
+          name:  Mozilla Developer Network
+        url:     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Getting_Started#Example:_Catching_a_mouse_click
+      - title:   Handling Events
+        type:    website
+        site:
+          name:  Eloquent Javascript
+        url:     http://eloquentjavascript.net/14_event.html
+
+  - title: Set up your own event
+    description: >
+        Interactivity is important for making a website appealing. There are many
+        events and all have their specific eventhandler, for example onmousedown
+        triggers obviously when the mouseclick is clicked. But there are many more;
+        have a look at the wide range of eventhandlers and choose the one you need
+        to complete the next task.
+    instructions:
+      - Fork the code on the Plunker link below
+      - Locate the two functions inside the script tag
+      - Have a look at the first function which is already at work
+      - Find out the second one (mUp) that is not being called yet
+        The function mUp is supposed to be executed when the mouse is up, so not clicked
+      - Add the appropriate eventhandler to call the mUp function when the mouse is up
+    resources:
+      - title:   Set up your event
+        type:    tool
+        site:
+          name:  Plunker
+        url:     http://plnkr.co/edit/168kcUcXouAFfBRDNj6e?p=preview
+      - title:   List of DOM events with eventhandler
+        type:    article
+        site:
+          name:  w3c list of DOM events
+        url:     http://www.w3schools.com/jsref/dom_obj_event.asp
+
+

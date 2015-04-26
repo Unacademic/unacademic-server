@@ -1,0 +1,61 @@
+title:    From  Paper to Polymer
+level:      3
+points:     100
+mandatory:  true
+category:   design
+
+technologies:
+  - Polymer
+  - Javascript
+
+description:
+  full: >
+    You have made a mockup on paper and now you will make a mockup using Polymer.
+    Maybe you want to rethink your design, maybe not.
+    That is your choice.
+    The functionalities do not have to work yet, but you will have to create a response.
+    This is a group assignment, so make sure you all agree on the design of
+    the mockup and divide the components or features amongst yourselves.
+  summary: >
+    From paper to Polymer, taking mocking up to a next level.
+
+tasks:
+  - title: Think in Components
+    description: >
+      The very first step is transforming your paper mockup into seperate
+      Polymer elements.
+      Think in modules, break up everything into the tiniest seperate component
+      possible.
+    instructions:
+      - Make a mockup using Polymer components use your previous drawing
+        and create components place it on the screen accordingly
+    resources:
+      - title:    Mockup Definition
+        type:     article
+        site:
+          name:   Mockup definition wikipedia
+        url:      http://en.wikipedia.org/wiki/Mockup
+
+  - title: Ask for Input
+    description: >
+      Make a number of input fields.
+      This number can also be one.
+    instructions:
+      - Create a minimum of one input field using Javascript
+
+  - title: Give a Response
+    description: >
+      The input fields do not truly have to work yet,
+      the input fields only need to give some sort of feedback.
+      This is easily accomplished with an alert.
+      However, if you want to go overboard
+      and add computational fireworks to your mockup,
+      you are welcome to do that.
+    instructions:
+      - Create an alert response for every module that requires user interaction
+    resources:
+      - title:    Alert response
+        type:     article
+        site:
+          name:   Alert response W3C
+        url:      http://www.w3schools.com/js/js_popup.asp

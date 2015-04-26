@@ -1,0 +1,94 @@
+title:      Variables
+level:      4
+points:     100
+mandatory:  false
+category:   theory
+
+technologies:
+  - Javascript
+
+description:
+  full: >
+    Variables are containers for data,and like many other containers
+    they are often labelled with a name. Because confusing H2O with H2O2
+    by mistake will most likely kill you, it is useful to label your
+    containers so that you have a good idea what is inside.
+    In this case "water" and "hydrogen peroxide" would be apt container names.
+    Sensible variable names makes code more readable and is considered
+    good programming practice.
+  summary: >
+    Variables are labelled containers for data.
+tasks:
+  - title: Get to know Variables
+    description: >
+      Javascript is a so called "dynamically typed language",
+      which means variables only have to be declared as variables
+      and not as the type of variable it is. In other words,
+      a programmer only has to say "this is a variable",
+      and Javascript does the rest of the work.
+      This is in stark contrast with languages such as C,
+      in which you not only have to say that something is a number,
+      but also what kind of number. Since Javascript has
+      only three types of data, this problem is not encountered often.
+    instructions:
+      - Watch the video
+      - Read the article
+    resources:
+      - title:    Different Types of Variables
+        type:     video
+        site:
+          name:   Youtube - The New Boston
+        url:      http://youtu.be/sY8qiSaAi9g
+      - title:    Javascript Variables
+        type:     article
+        site:
+          name:   Tutorials Point
+        url:      http://www.tutorialspoint.com/javascript/javascript_variables.htm
+
+  - title: Learn about Scope
+    description: >
+      Scope is the concept of where variables can be accessed.
+      For example, a variable that is declared within a function
+      cannot really be accessed from the outside. However, a variable
+      outside a function can be accessed from within the function.
+      Scope is very important to keep in mind, because faulty scoping
+      can mess up any program.
+    instructions:
+      - Watch the video
+      - Read the article
+      - Write a short program as an example of how to use scope
+      - Include at least one local and one global variable
+      - Use comments to provide deeper explanation
+      - Explain the concept of scope to a friend, parent
+        or your landlord using the example you just wrote
+      - Hand in the example by posting a gist link on Slack
+    resources:
+      - title:    Scopes and Variables
+        type:     article
+        site:
+          name:   Javascript Workflow for Dummies
+        url:      http://anthonypigeot.com/javascript-workflow-for-dummies-scopes-and-variables/
+      - title:    Global & Local Variables
+        type:     video
+        site:
+          name:   Youtube - The New Boston
+        url:      http://youtu.be/waF2Isf-phQ
+
+  - title: Meet Var and Let
+    description: >
+      In the new Javascript there are two different types
+      of variables. Var is the one mostly used, let is the new one.
+      Chances are you will seldom or never use the latter.
+      Let is a special type of variable that can only be accessed
+      in the code block where it is declared in. Keep in mind that
+      this is such a new technology, you do not really have to master it.
+      However, it lets you get a closer look at the principle of
+      scope and a slight glipse into the future of Javascript.
+    instructions:
+      - Read the article
+    resources:
+      - title:    Let
+        type:     article
+        site:
+          name:   Mozilla Developer Network
+        url:      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let

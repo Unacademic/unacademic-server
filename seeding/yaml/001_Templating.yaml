@@ -1,0 +1,70 @@
+title:      Templating
+level:      1
+points:     100
+mandatory:  false
+category:   markup
+
+technologies:
+  - HTML5
+  - Javascript
+  - (Handlebars.js)
+
+description:
+  full: >
+    HTML5 allows us to make template elements. A template can best be
+    described as a mold with a fixed layout, which can be repeated multiple
+    times. Instead of putting the content directly in the tags (as we did
+    in our level 000 HTML course), the content and the tags are completely
+    separated. This practice gives much flexibility and endless possibilities.
+  summary: >
+    HTML5 allows for template elements. A template is best described as a mold
+    with a fixed layout, which can be repeated multiple times.
+
+tasks:
+  - title: Get the basics
+    description: >
+      Learn about the basic ideas behind a template.
+      Don't worry if you don't grasp everything!
+      In the next task you'll see that there are tools available which make the
+      use of templates way easier.
+    instructions:
+      - Scan through the article
+    resources:
+      - title:   HTML’s New Template Tag
+        type:    article
+        site:
+          name:  HTML5 Rocks
+        url:     http://www.html5rocks.com/en/tutorials/webcomponents/template/
+
+  - title: Make a template with Handlebars.js
+    description: >
+      Luckily there are tools available which make the use of templates a lot
+      easier. When you use Handlebars.js you
+      barely have to mess around with any Javascript.
+    instructions:
+      - Read the article
+    resources:
+      - title:   Handlebars.js homepage
+        type:    article
+        site:
+          name:  Handlebars.js
+        url:     http://handlebarsjs.com/
+
+  - title: Make your own template
+    description: >
+      In this task you will make your very own handlebars web template.
+      As an example there is a template which makes use of JSON data from the New York Times website(find on Plunker).
+    instructions:
+      - Complete the Plunker task
+      - Save the results and share it on our Slack-channel
+    resources:
+      - title:   Make your own template
+        type:    article
+        site:
+          name:  Plunker
+        url:     http://plnkr.co/edit/RSupaKgA4unZctvinzjn?p=info
+      - title:   An introduction to JSON
+        type:    video
+        site:
+          name:  YouTube
+        url:     https://www.youtube.com/watch?v=rncW-74VL7U

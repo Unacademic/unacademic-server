@@ -1,0 +1,140 @@
+title:      DOM
+level:      1
+points:     100
+mandatory:  true
+category:   markup
+
+technologies:
+  - DOM
+
+description:
+  full: >
+    The DOM is a different representation of the HTML in the browser. 
+    In the DOM you can see the various objects on a page and how they relate to each other in a tree
+    structure.
+    The DOM can be viewed and manipulated using the javascript console in your browser.
+    Every browser has a console, so don't worry about having to install yet another program on your
+    computer.
+
+  summary: >
+    The DOM (Document Object Model) is the structural representation of an
+    HTML document
+
+tasks:
+  - title: Get to know the difference
+    description: >
+      When you inspect your document in a browser and look at the elements you 
+      might wonder what the difference between ordinary HTML actually is. Although 
+      it looks the same there are many differences. Your HTML document is actually 
+      being sliced into many pieces (objects) and each of these pieces have methods
+      and properties added to them. This way the DOM is able to show us more information 
+      on any of these sliced pieces, and allows us to navigate through and interact with them.
+    instructions:
+      - Open the javascript console in your browser
+      - Type console.log(document) in the javascript console and press enter
+      - Click on the triangle to unfold the document object and on some further
+        triangles. This will show something very similar to the HTML structure.
+      - Get to know how to navigate the tree a bit  
+      - Type console.dir(document) and have a look at that. Do not worry 
+        about all the methods and properties in there too much.
+    resources:
+      - title:   The DOM viewed trough the Dev Tools
+        type:    video
+        site:
+          name:  Codeschool
+        url:     http://discover-devtools.codeschool.com/chapters/1/challenges/1?locale=en
+
+  - title: Get to know DOM nodes
+    description: >
+      Remember the HTML tags? The DOM divides these into even smaller pieces called nodes.
+      A node is a point connected to other nodes to create a network.
+      That way a tag becomes a combination of different types of nodes. 
+      There are various types of nodes that all refer to their most basic purpose:
+      text nodes, element nodes or attribute nodes. You will often use them as an entry 
+      point to interact with your document.
+    instructions:
+      - Try to find each of the node types inside console.dir(document)
+    resources:
+      - title:   DOM Nodes
+        type:    article
+        site:
+          name:  Mozilla Developer Network
+        url:     http://www.quirksmode.org/dom/intro.html#nodes
+
+  - title: Understand the relation between nodes
+    description: >
+      All nodes in the DOM have a relation to each other. This can be visualised
+      in a tree structure and be spoken about in terms of family relations. A node
+      that has another node inside of it has a parent/child relationship to it.
+      There can also be multiple nodes on the same level of nesting. These would
+      be called siblings to each other. To be able to distinguish these relations
+      with a quick glance, HTML (and other types) are indented based on the level
+      of nesting.
+    instructions:
+      - Try to fix the indentation in the gist below
+      - Navigate the document object keeping these terms in mind to see their 
+        implementation.
+    resources:
+      - title:  Explanation focussed on the tree structure
+        type:   article
+        site:
+          name: W3schools
+        url:    http://www.w3schools.com/dom/dom_nodetree.asp
+      - title:  Tree Structure Task
+        type:   gist
+        site:
+          name: Github Gists
+        url:    https://gist.githubusercontent.com/Zaturrby/22969282f635e50a9e8b/raw/f186b852c2cff32591b26a4810e55da00beeb729/treetask.html
+      - title:  Live DOM Tree viewer
+        type:   application
+        site:
+          name: Check task
+        url:    http://software.hixie.ch/utilities/js/live-dom-viewer/
+
+  - title: Interact with the DOM through CSS
+    description: >
+      The most important reason to get the know the DOM is because it enables
+      CSS or Javascript to interact with it. Often this interaction will take
+      place trough classes or ids. Both of the languages however also allow you 
+      to traverse the DOM with by node relations. The allows you to write cleaner 
+      code. An example of CSS selector that uses these relations is ::first-child. 
+    instruction:
+      - Target elements using the CSS (first/last/nth) child and type pseudo 
+        class selectors
+      - Look at your own document, are there classes that could be replaced by
+        using these types of selectors?
+    resources:
+      - title:  Relational Selectors
+        type:   article
+        site:
+          name: Must be build
+        url:    http://www.mustbebuilt.co.uk/2012/01/02/advanced-css-selectors/
+      - title:  Pseudo-classes
+        type:   article
+        site:
+          name: Mozilla Developer Network
+        url:    https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+
+  - title: Interact with the DOM trough Javascript
+    description: >
+      Another way of describing the DOM is that it is a programming
+      interface or API to your document. It allows you to get specific 
+      information out of your document or allows you to change it. In the previous
+      task styling was attached to elements with CSS, but the HTML structure did
+      not change. Javascript however can do this.
+    instructions:
+      - Go to the page of the first task on the Mozilla Developer Network
+      - 'Open your DevTools, type in the following command: 
+        document.getElementById("main-header").innerHTML = "Hello World"'
+      - Try moving your newly introduced phrase to another place on the page
+    resources:
+      - title:   Process oriented explanation of the DOM
+        type:    book chapter
+        site:
+          name:  Wellesley
+        url:     http://cs.wellesley.edu/~cs110/lectures/L11/dom.html
+      - title:   Javascript oriented explanation of the DOM
+        type:    book chapter
+        site:
+          name:  Eloquent Javascript on DOM
+        url:     http://eloquentjavascript.net/13_dom.html
